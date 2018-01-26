@@ -23,7 +23,7 @@
     "lint-js": "eslint .",
     "lint-format": "prettier --list-different \"**/*.{js.css,md}\"",
     "start": "react-scripts start",
-    "test": "react-scripts test --env=jsdom"
+    "test": "echo \"No tests.\" && exit 1"
   },
   "dependencies": {
     "change-case": "^3.0.1",

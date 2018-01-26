@@ -51,7 +51,6 @@ class Search extends Component {
     onFilterAll: PropTypes.func.isRequired,
     search: PropTypes.string.isRequired,
     resources: PropTypes.array.isRequired,
-    disabled: PropTypes.bool,
   };
 
   state = {
@@ -69,13 +68,7 @@ class Search extends Component {
   };
 
   render() {
-    const {
-      disabled,
-      search,
-      resources,
-      onFilterAll,
-      onFilterChange,
-    } = this.props;
+    const { search, resources, onFilterAll, onFilterChange } = this.props;
     const { showFilters } = this.state;
 
     return (
@@ -84,7 +77,6 @@ class Search extends Component {
           <input
             autoFocus
             aria-label="Search"
-            disabled={disabled}
             ref={input => {
               this.input = input;
             }}

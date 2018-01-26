@@ -30,11 +30,6 @@
   outline-color: #fff;
 }
 
-.Search-input:disabled {
-  background-color: #eee;
-  opacity: 0.5;
-}
-
 .Search-more-filters {
   flex: none;
   position: relative;

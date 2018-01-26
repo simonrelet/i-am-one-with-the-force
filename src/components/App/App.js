@@ -138,7 +138,11 @@ class App extends Component {
     } = this.state;
 
     let content;
-    if (pending) {
+    if (serverError) {
+      content = (
+        <p className="Message Message-error">Could not reach the server.</p>
+      );
+    } else if (pending) {
       content = <p className="Message">Searching...</p>;
     } else if (search && !typing) {
       content = <Results results={results} />;
@@ -154,7 +158,6 @@ class App extends Component {
         <Search
           search={search}
           resources={resources}
-          disabled={serverError}
           onSearchChange={this.handleSearchChange}
           onFilterChange={this.handleFilterChange}
           onFilterAll={this.handleFilterAll}
