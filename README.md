@@ -41,3 +41,15 @@ In a console run:
 ```sh
 yarn build
 ```
+
+## Features
+
+* The user can search using in a unique input
+* The user can filter the results he obtained by resources (people, planets, etc.)
+* The user see up to 5 result in each resources
+* The search is preserved in a query parameter in the URL
+
+## Missing features
+
+* Search pagination
+* Preserve the filter in query parameters
