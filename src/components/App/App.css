@@ -1,0 +1,17 @@
+.App-header {
+  background-color: #2196f3;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.App-title {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.Message {
+  margin: 56px 0;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.57);
+}

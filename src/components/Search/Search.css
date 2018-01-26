@@ -1,0 +1,136 @@
+.Search {
+  position: sticky;
+  top: 0;
+  background-color: #2196f3;
+  padding: 8px 0;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+
+.Search-bar {
+  display: flex;
+}
+
+.Search-input {
+  font-size: inherit;
+  font-family: inherit;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  border: none;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.Search-input::placeholder {
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.Search-input:focus {
+  outline-color: #fff;
+}
+
+.Search-input:disabled {
+  background-color: #eee;
+  opacity: 0.5;
+}
+
+.Search-more-filters {
+  flex: none;
+  position: relative;
+  font-family: inherit;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.56);
+  border: none;
+  padding: 8px 32px 8px 16px;
+  margin-left: 8px;
+  background: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.Search-more-filters::after {
+  display: inline-flex;
+  position: absolute;
+  content: '';
+  top: calc(50% - 2px);
+  margin-left: 8px;
+  border-top: 4px solid rgba(0, 0, 0, 0.56);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+
+.Search-more-filters:hover {
+  color: inherit;
+}
+
+.Search-more-filters:hover::after {
+  border-top-color: rgba(0, 0, 0, 0.87);
+}
+
+.Search-more-filters:focus {
+  outline-color: #fff;
+  color: inherit;
+}
+
+.Search-more-filters:focus::after {
+  border-top-color: rgba(0, 0, 0, 0.87);
+}
+
+.Search-more-filters-open::after {
+  transform: rotate(180deg);
+}
+
+.Filters {
+  margin-top: 8px;
+  padding: 16px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.Filters-header {
+  display: flex;
+  align-items: center;
+}
+
+.Filters-legend {
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.Filters-list {
+  margin-top: 16px;
+}
+
+.Filters-list-item {
+  display: inline-flex;
+}
+
+.Filters-include-all {
+  margin-left: 16px;
+  font-family: inherit;
+  font-size: 12px;
+  color: inherit;
+  border: none;
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.Filters-include-all:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.Filters-include-all:focus {
+  outline-color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.Filter:not(:first-child) {
+  margin-left: 24px;
+}
+
+.Filter-label {
+  margin-left: 8px;
+}
