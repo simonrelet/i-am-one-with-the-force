@@ -42,6 +42,13 @@ In a console run:
 yarn build
 ```
 
+Then the _build/_ folder can be served using a static server.
+For example:
+
+```sh
+npx serve -s build
+```
+
 ## Features
 
 * The user can search using in a unique input
@@ -53,3 +60,4 @@ yarn build
 
 * Search pagination
 * Preserve the filter in query parameters
+* Tests :)
