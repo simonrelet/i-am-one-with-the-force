@@ -4,7 +4,7 @@
 
 ## What’s Inside?
 
-This application was built using many community projects, such as:
+This application was built using some community projects, such as:
 
 * [Node.js](https://nodejs.org)
 * [Yarn](https://yarnpkg.com)
